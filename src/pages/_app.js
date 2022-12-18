@@ -1,5 +1,14 @@
-import '../styles/globals.css'
+import '@styles/globals.css';
+import '@styles/global.css';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import AppContext from '@context/AppContext';
+import useInitialState from '@hooks/useInitialState';
+
+export default function MyApp({ Component, pageProps }) {
+  const InitialState = useInitialState();
+  return (
+    <AppContext.Provider value={InitialState}>
+      <Component {...pageProps} />
+    </AppContext.Provider>
+  );
 }
