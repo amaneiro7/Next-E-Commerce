@@ -1,15 +1,14 @@
 
-.nav {
+.Nav {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	padding: 0 24px;
 	border-bottom: 1px solid var(--very-light-pink);
 }
 .menu {
 	display: none;
-}
-.nav-logo {
-	width: 100px;
+	cursor: pointer;
 }
 .navbar-left ul,
 .navbar-right ul {
@@ -22,6 +21,10 @@
 }
 .navbar-left {
 	display: flex;
+	align-items: center;
+	.nav-logo {
+		width: 100px;
+	}
 }
 .navbar-left ul {
 	margin-left: 12px;
@@ -43,9 +46,11 @@
 	color: var(--very-light-pink);
 	font-size: var(--sm);
 	margin-right: 12px;
+	cursor: pointer;
 }
 .navbar-shopping-cart {
 	position: relative;
+	cursor: pointer;
 }
 .navbar-shopping-cart div {
 	width: 16px;
@@ -61,7 +66,7 @@
 	justify-content: center;
 	align-items: center;
 }
-@media (max-width: 640px) {
+@media (max-width: 750px) {
 	.menu {
 		display: block;
 	}
