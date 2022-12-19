@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from '@styles/MobileMenu.module.scss';
 
-
 const MobileMenu = () => {
     return (
         <div className={styles.MobileMenu}>
@@ -50,6 +49,6 @@ const MobileMenu = () => {
             </ul>
         </div>
     );
-}
+};
 
 export default MobileMenu;
