@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import Image from 'next/image'
+import Image from 'next/image';
 import AppContext from 'context/AppContext';
-import close from '@icons/icon_close.png'
+import close from '@icons/icon_close.png';
 import styles from '@styles/OrderItem.module.scss';
 
 const OrderItem = ({ product }) => {
@@ -28,6 +28,6 @@ const OrderItem = ({ product }) => {
 			<Image src={close} alt="close" onClick={() => handleRemove(product)} />
 		</div>
 	);
-}
+};
 
 export default OrderItem;

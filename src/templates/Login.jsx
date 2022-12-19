@@ -12,9 +12,8 @@ const Login = () => {
 		const data = {
 			usename: formData.get('email'),
 			password: formData.get('password')
-		}
-		console.log(data);
-	}
+		}		
+	};
 
 	return (
 		<div className={styles.Login}>
@@ -40,6 +39,6 @@ const Login = () => {
 			</div>
 		</div >
 	);
-}
+};
 
 export default Login;

@@ -50,6 +50,6 @@ const MobileMenu = () => {
             </ul>
         </div>
     );
-}
+};
 
 export default MobileMenu;

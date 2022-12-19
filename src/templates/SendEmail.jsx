@@ -7,15 +7,15 @@ import Link from 'next/link';
 const SendEmail = () => {
 	return (
 		<div className={styles.SendEmail}>
-			<div className="form-container">
-				<Image src={logo} alt="logo" className="logo" />
-				<h1 className="title">Email has been sent!</h1>
-				<p className="subtitle">Please check your inbox for instructions on how to reset the password</p>
-				<div className="email-image">
-					<image src={email} alt="email" />
+			<div className={styles["form-container"]}>
+				<Image src={logo} alt="logo" className={styles.logo} />
+				<h1 className={styles.title}>Email has been sent!</h1>
+				<p className={styles.subtitle}>Please check your inbox for instructions on how to reset the password</p>
+				<div className={styles["email-image"]}>
+					<Image src={email} alt="email" />
 				</div>
-				<button className="primary-button login-button">Login</button>
-				<p className="resend">
+				<button className={`${styles["primary-button"]} ${styles["login-button"]}`}>Login</button>
+				<p className={styles.resend}>
 					<span>Didn't receive the email?</span>
 					<Link href="/">Resend</Link>
 				</p>

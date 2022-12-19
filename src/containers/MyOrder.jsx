@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import Link from 'next/link';
-import Image from 'next/image'
+import Image from 'next/image';
 import OrderItem from '@components/OrderItem';
 import AppContext from '@context/AppContext';
 import arrow from '@icons/flechita.svg';
@@ -39,6 +39,6 @@ const MyOrder = () => {
 			</div>
 		</aside>
 	);
-}
+};
 
 export default MyOrder;

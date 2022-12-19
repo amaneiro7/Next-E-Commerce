@@ -12,6 +12,6 @@ function IndexPage() {
       </Head>
     </div>
   );
-}
+};
 
 export default IndexPage;

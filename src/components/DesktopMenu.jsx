@@ -17,6 +17,6 @@ const DesktopMenu = () => {
 			</ul>
 		</div>
 	);
-}
+};
 
 export default DesktopMenu;

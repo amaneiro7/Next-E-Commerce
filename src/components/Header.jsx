@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import Link from 'next/link';
-import Image from 'next/image'
+import Image from 'next/image';
 import DesktopMenu from '@components/DesktopMenu';
 import MobileMenu from '@components/MobileMenu';
 import MyOrder from '@containers/MyOrder';
@@ -80,6 +80,6 @@ const Header = () => {
             {toggleMyOrder && <MyOrder />}
 		</nav>
 	);
-}
+};
 
 export default Header;

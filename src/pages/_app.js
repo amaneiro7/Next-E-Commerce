@@ -34,4 +34,4 @@ export default function MyApp({ Component, pageProps }) {
       </AppContext.Provider>
     </>
   );
-}
+};
