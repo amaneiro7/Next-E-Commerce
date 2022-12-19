@@ -5,6 +5,7 @@ import styles from '@styles/Checkout.module.scss';
 
 const Checkout = () => {
 	const { state } = useContext(AppContext);
+    console.log(state)
     const current = new Date();
     const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`
 
