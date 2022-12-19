@@ -38,18 +38,18 @@ const MobileMenu = () => {
             </ul>
             <ul>
                 <li>
-                    <a href="/" className={styles["email"]}>
+                    <a href="/" className={styles['email']}>
                         platzi@example.com
                     </a>
                 </li>
                 <li>
-                    <a href="/" className={styles["sign-out"]}>
+                    <a href="/" className={styles['sign-out']}>
                         Sign out
                     </a>
                 </li>
             </ul>
         </div>
     );
-};
+}
 
 export default MobileMenu;

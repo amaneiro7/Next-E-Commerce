@@ -17,22 +17,22 @@ const Login = () => {
 
 	return (
 		<div className={styles.Login}>
-			<div className={styles["Login-container"]}>
+			<div className={styles['Login-container']}>
 				<Image src={logo} alt="logo" className={styles.logo} />
 				<form action="/" className={styles.form} ref={form}>
 					<label htmlFor="email" className="label">Email address</label>
-					<input type="text" name="email" placeholder="platzi@example.cm" className={`${styles["input"]} ${styles["input-email"]}`} />
+					<input type="text" name="email" placeholder="platzi@example.cm" className={`${styles['input']} ${styles['input-email']}`} />
 					<label htmlFor="password" className="label">Password</label>
-					<input type="password" name="password" placeholder="*********" className={`${styles["input"]} ${styles["input-password"]}`} />
+					<input type="password" name="password" placeholder="*********" className={`${styles['input']} ${styles['input-password']}`} />
 					<button
 						onClick={handleSubmit}
-						className={`${styles["primary-button"]} ${styles["login-button"]}`}>
+						className={`${styles['primary-button']} ${styles['login-button']}`}>
 						Log in
 					</button>
 					<a href="/">Forgot my password</a>
 				</form>
 				<button
-					className="secondary-button signup-button"
+					className={`${styles['secondary-button']} ${styles['signup-button']}`}
 				>
 					Sign up
 				</button>

@@ -21,7 +21,7 @@ const MyOrder = () => {
 				<Image src={arrow} alt="arrow" />
 				<p className={styles.title}>My order</p>
 			</div>
-			<div className={styles["my-order-content"]}>
+			<div className={styles['my-order-content']}>
 				{state.cart.map(product => (
 					<OrderItem product={product} key={`orderItem-${product.id}`} />
 				))}
@@ -32,7 +32,7 @@ const MyOrder = () => {
 					<p>${sumTotal()}</p>
 				</div>
 				<Link href="/checkout">
-				<button className={styles["primary-button"]}>
+				<button className={styles['primary-button']}>
 					Checkout
 				</button>
 				</Link>

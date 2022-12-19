@@ -7,7 +7,7 @@ import styles from  '@styles/ProductDetail.module.scss';
 const ProductDetail = () => {
 	return (
 		<aside className={styles.ProductDetail}>
-			<div className={styles["ProductDetail-close"]}>
+			<div className={styles['ProductDetail-close']}>
 				<Image src={close} alt="close" />
 			</div>
 			<ProductInfo />

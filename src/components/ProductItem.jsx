@@ -18,10 +18,9 @@ const ProductItem = ({ product }) => {
 				src={product.images[0]} 
 				alt={product.title} 
 				width={100}
-				height={100}
-				layout="responsive"
+				height={100}				
 			/>
-			<div className={styles["product-info"]}>
+			<div className={styles['product-info']}>
 				<div>
 					<p>${product.price}</p>
 					<p>{product.title}</p>

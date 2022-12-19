@@ -6,7 +6,7 @@ const DesktopMenu = () => {
 		<div className={styles.DesktopMenu}>
 			<ul>
 				<li>
-					<a href="/" className={styles["title"]}>My orders</a>
+					<a href="/" className={styles.title}>My orders</a>
 				</li>
 				<li>
 					<a href="/">My account</a>
