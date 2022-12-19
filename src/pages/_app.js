@@ -9,9 +9,17 @@ import useInitialState from '@hooks/useInitialState';
 export default function MyApp({ Component, pageProps }) {
   const InitialState = useInitialState();
   return (
-    <>   
-      
-    
+    <>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID" strategy="afterInteractive" />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'GA_MEASUREMENT_ID');
+        `}
+      </Script>
       <AppContext.Provider value={InitialState}>
         <Head>
           <title>React-e Shop</title>
@@ -21,17 +29,6 @@ export default function MyApp({ Component, pageProps }) {
           <meta name="description" content="Mercado de articulos" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
-        Google tag (gtag.js)
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TM21YTEWZD"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag() {
-            dataLayer.push(arguments)
-          }
-          gtag('js', new Date());
-
-          gtag('config', 'G-TM21YTEWZD');
-        </script>
         <Header />
         <Component {...pageProps} />
       </AppContext.Provider>

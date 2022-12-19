@@ -3,7 +3,7 @@ import ProductItem from '@components/ProductItem';
 import useGetProducts from '@hooks/useGetProducts';
 import styles from  '@styles/ProductList.module.scss';
 
-const API = 'https://api.escuelajs.co/api/v1/products';
+const API = process.env.NEXT_PUBLIC_APIURL;
 
 const ProductList = () => {
 	const products = useGetProducts(API);
