@@ -5,6 +5,7 @@ import styles from '@styles/Checkout.module.scss';
 
 const Checkout = () => {
 	const { state } = useContext(AppContext);
+    console.log(state)
     const current = new Date();
     const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`
 
@@ -22,9 +23,9 @@ const Checkout = () => {
 					<div className={styles.order}>
 						<p>
 							<span>{date}</span>
-							<span>6 articles</span>
+							<span>{state.cart.length} articles</span>
 						</p>
-						<p>${sumTotal}</p>
+						<p>${sumTotal()}</p>
 					</div>
 				</div>
 				{state.cart.map(product => (
