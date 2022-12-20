@@ -1,9 +1,12 @@
+import React from 'react';
 import ProductList from '@containers/ProductList';
 
-export default function Home() {
+const Home = () => {
     return (
         <>
             <ProductList />
         </>
     );
-}
+};
+
+export default Home;
